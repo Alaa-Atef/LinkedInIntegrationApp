@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+@if (User.Identity!.IsAuthenticated)
+{
+    <h3>Hello, @User.Identity.Name</h3>
+    <img src="@User.FindFirst("profile-picture")?.Value" alt="Profile Picture" style="max-width:150px;" />
+    <br />
+    <a asp-controller="Account" asp-action="Logout">Logout</a>
+}
+else
+{
+    <a asp-controller="Account" asp-action="Login">Login with LinkedIn</a>
+}

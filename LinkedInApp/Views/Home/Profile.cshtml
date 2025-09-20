@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Profile Image";
+}
+
+<h2>Your LinkedIn Profile Card</h2>
+
+@if (ViewBag.ImagePath != null)
+{
+    <img src="@ViewBag.ImagePath" alt="Generated Profile Card" style="border:2px solid #ccc; max-width:100%;" />
+}
