@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ImageOverlayService>();
-builder.Services.AddHttpClient<ImageOverlayService>();
+builder.Services.AddHttpClient<IImageOverlayService, ImageOverlayService>();
 
 // Configure Authentication with Cookie + LinkedIn OpenID Connect
 builder.Services

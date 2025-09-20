@@ -7,9 +7,9 @@ namespace LinkedInApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ImageOverlayService _imageService;
+        private readonly IImageOverlayService _imageService;
 
-        public HomeController(ImageOverlayService imageService)
+        public HomeController(IImageOverlayService imageService)
         {
             _imageService = imageService;
         }

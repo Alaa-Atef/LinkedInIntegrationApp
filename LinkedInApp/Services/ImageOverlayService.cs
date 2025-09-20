@@ -6,7 +6,7 @@ using SixLabors.ImageSharp.Processing;
 
 namespace LinkedInApp.Services
 {
-    public class ImageOverlayService
+    public class ImageOverlayService : IImageOverlayService
     {
         private readonly IWebHostEnvironment _env;
         private readonly HttpClient _httpClient;
