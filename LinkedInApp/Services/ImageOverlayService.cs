@@ -9,10 +9,12 @@ namespace LinkedInApp.Services
     public class ImageOverlayService
     {
         private readonly IWebHostEnvironment _env;
+        private readonly HttpClient _httpClient;
 
-        public ImageOverlayService(IWebHostEnvironment env)
+        public ImageOverlayService(IWebHostEnvironment env, HttpClient httpClient)
         {
             _env = env;
+            _httpClient = httpClient;
         }
 
         public async Task<string> CreateProfileImageAsync(string profilePicUrl, string name)
@@ -21,9 +23,8 @@ namespace LinkedInApp.Services
             var bgPath = Path.Combine(_env.WebRootPath, "backgrounds", "background.png");
             using var background = await Image.LoadAsync(bgPath);
 
-            // 2. Load profile picture from URL
-            using var httpClient = new HttpClient();
-            using var profileStream = await httpClient.GetStreamAsync(profilePicUrl);
+            // 2. Load profile picture from URL using injected HttpClient
+            using var profileStream = await _httpClient.GetStreamAsync(profilePicUrl);
             using var profilePic = await Image.LoadAsync(profileStream);
 
             // Resize profile picture to 200x200
