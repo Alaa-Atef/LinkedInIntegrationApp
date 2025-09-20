@@ -1,10 +1,16 @@
-﻿@{
+﻿@model LinkedInApp.Models.ProfileResult
+
+@{
     ViewData["Title"] = "Profile Image";
 }
 
-<h2>Your LinkedIn Profile Card</h2>
+<h2>@Model.Name's LinkedIn Profile Card</h2>
 
-@if (ViewBag.ImagePath != null)
+@if (!string.IsNullOrEmpty(Model.ImagePath))
 {
-    <img src="@ViewBag.ImagePath" alt="Generated Profile Card" style="border:2px solid #ccc; max-width:100%;" />
+    <img src="@Model.ImagePath" alt="Generated Profile Card" style="border:2px solid #ccc; max-width:100%;" />
+}
+else
+{
+    <p>No image available.</p>
 }

@@ -1,3 +1,4 @@
+using LinkedInApp.Models;
 using LinkedInApp.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -24,14 +25,25 @@ namespace LinkedInApp.Controllers
             var name = User.Identity?.Name ?? "Unknown";
             var pictureUrl = User.Claims.FirstOrDefault(c => c.Type == "profile-picture")?.Value;
 
-            if (pictureUrl == null)
+            if (string.IsNullOrEmpty(pictureUrl))
             {
-                return Content("No profile picture claim found.");
+                var placeholder = new ProfileResult
+                {
+                    Name = name,
+                    ImagePath = "/images/default-profile.jpg" 
+                };
+                return View(placeholder);
             }
 
             var generatedPath = await _imageService.CreateProfileImageAsync(pictureUrl, name);
-            ViewBag.ImagePath = generatedPath;
-            return View();
+
+            var model = new ProfileResult
+            {
+                Name = name,
+                ImagePath = generatedPath
+            };
+
+            return View(model);
         }
     }
 }
