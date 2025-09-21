@@ -94,6 +94,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseMiddleware<LinkedInApp.Middleware.ExceptionHandlingMiddleware>();
 
 app.UseAuthentication();
 app.UseAuthorization();

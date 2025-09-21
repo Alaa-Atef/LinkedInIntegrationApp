@@ -45,5 +45,10 @@ namespace LinkedInApp.Controllers
 
             return View(model);
         }
+
+        public IActionResult Error()
+        {
+            return View();
+        }
     }
 }
