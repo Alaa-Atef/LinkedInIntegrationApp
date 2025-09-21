@@ -14,7 +14,7 @@ Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
     .CreateLogger();
 
-builder.Host.UseSerilog(); // Replace default logger with Serilog
+builder.Host.UseSerilog(); 
 
 // Add MVC services
 builder.Services.AddControllersWithViews();
@@ -40,7 +40,6 @@ builder.Services
         options.AuthorizationEndpoint = "https://www.linkedin.com/oauth/v2/authorization";
         options.TokenEndpoint = "https://www.linkedin.com/oauth/v2/accessToken";
 
-        // Use OpenID Connect scopes instead of r_liteprofile
         options.Scope.Clear();
         options.Scope.Add("openid");
         options.Scope.Add("profile");
