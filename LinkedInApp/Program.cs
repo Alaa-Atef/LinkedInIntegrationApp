@@ -102,4 +102,17 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.Run();
+try
+{
+    Log.Information("Starting application in {Environment}", builder.Environment.EnvironmentName);
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Application terminated unexpectedly");
+    throw; // rethrow so the host process knows something went wrong
+}
+finally
+{
+    Log.CloseAndFlush();
+}
