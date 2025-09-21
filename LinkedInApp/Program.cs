@@ -21,6 +21,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ImageOverlayService>();
 builder.Services.AddHttpClient<IImageOverlayService, ImageOverlayService>();
+builder.Services.AddHttpClient<ILinkedInAuthService, LinkedInAuthService>();
 
 // Configure Authentication with Cookie + LinkedIn OpenID Connect
 builder.Services
@@ -38,7 +39,6 @@ builder.Services
 
         options.AuthorizationEndpoint = "https://www.linkedin.com/oauth/v2/authorization";
         options.TokenEndpoint = "https://www.linkedin.com/oauth/v2/accessToken";
-        options.UserInformationEndpoint = "https://api.linkedin.com/v2/userinfo";
 
         // Use OpenID Connect scopes instead of r_liteprofile
         options.Scope.Clear();
@@ -52,32 +52,8 @@ builder.Services
         {
             OnCreatingTicket = async context =>
             {
-                // Fetch user info
-                var request = new HttpRequestMessage(HttpMethod.Get, options.UserInformationEndpoint);
-                request.Headers.Authorization =
-                    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", context.AccessToken);
-
-                var response = await context.Backchannel.SendAsync(request);
-                response.EnsureSuccessStatusCode();
-
-                using var user = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
-                var root = user.RootElement;
-
-                // Full name
-                if (root.TryGetProperty("name", out var nameProp))
-                {
-                    context.Identity!.AddClaim(new Claim(ClaimTypes.Name, nameProp.GetString()!));
-                }
-
-                // Profile picture
-                if (root.TryGetProperty("picture", out var pictureProp))
-                {
-                    var pictureUrl = pictureProp.GetString();
-                    if (!string.IsNullOrEmpty(pictureUrl))
-                    {
-                        context.Identity!.AddClaim(new Claim("profile-picture", pictureUrl));
-                    }
-                }
+                var linkedInAuthService = context.HttpContext.RequestServices.GetRequiredService<ILinkedInAuthService>();
+                await linkedInAuthService.AddUserClaimsAsync(context.AccessToken!, context.Identity!);
             }
         };
     });
