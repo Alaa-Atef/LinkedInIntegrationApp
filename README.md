@@ -86,7 +86,7 @@ LinkedInApp.Tests/          # Unit tests project
 4. Navigate to:
 
    ```
-   https://localhost:5001
+   https://localhost:7220
    ```
 
 ## ✅ Unit Tests
