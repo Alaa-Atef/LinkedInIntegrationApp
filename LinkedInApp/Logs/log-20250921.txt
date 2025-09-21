@@ -269,3 +269,166 @@ System.Exception: Test crash
 2025-09-21 11:44:27.314 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.2753ms
 2025-09-21 11:44:27.355 +03:00 [INF] Sending file. Request path: '/generated/profile_f957e634-368d-42fd-8c7d-782a9040edba.png'. Physical path: 'C:\Work\JohnsonControlsTask\LinkedInApp\wwwroot\generated\profile_f957e634-368d-42fd-8c7d-782a9040edba.png'
 2025-09-21 11:44:27.359 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/generated/profile_f957e634-368d-42fd-8c7d-782a9040edba.png - 200 73352 image/png 84.1915ms
+2025-09-21 12:08:45.367 +03:00 [INF] Starting application in Development
+2025-09-21 12:08:45.513 +03:00 [INF] User profile is available. Using 'C:\Users\Alaa_Atef\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-21 12:08:46.050 +03:00 [INF] Now listening on: https://localhost:7220
+2025-09-21 12:08:46.051 +03:00 [INF] Now listening on: http://localhost:5083
+2025-09-21 12:08:46.101 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 12:08:46.103 +03:00 [INF] Hosting environment: Development
+2025-09-21 12:08:46.106 +03:00 [INF] Content root path: C:\Work\JohnsonControlsTask\LinkedInApp
+2025-09-21 12:08:47.239 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/ - null null
+2025-09-21 12:08:47.418 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:08:47.447 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LinkedInApp.Controllers.HomeController (LinkedInApp).
+2025-09-21 12:08:47.459 +03:00 [INF] Executing ViewResult, running view Index.
+2025-09-21 12:08:47.638 +03:00 [INF] Executed ViewResult - view Index executed in 178.7864ms.
+2025-09-21 12:08:47.644 +03:00 [INF] Executed action LinkedInApp.Controllers.HomeController.Index (LinkedInApp) in 194.422ms
+2025-09-21 12:08:47.646 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:08:47.660 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 12:08:47.660 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/ - 200 null text/html; charset=utf-8 422.4526ms
+2025-09-21 12:08:47.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - null null
+2025-09-21 12:08:47.683 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 23.2228ms
+2025-09-21 12:08:47.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.512ms
+2025-09-21 12:08:57.307 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/Home/Profile - null null
+2025-09-21 12:08:57.329 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.HomeController.Profile (LinkedInApp)'
+2025-09-21 12:08:57.342 +03:00 [INF] Route matched with {action = "Profile", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller LinkedInApp.Controllers.HomeController (LinkedInApp).
+2025-09-21 12:08:57.355 +03:00 [INF] Starting image overlay for user Alaa Atef
+2025-09-21 12:08:57.729 +03:00 [INF] Start processing HTTP request GET https://media.licdn.com/dms/image/v2/D4D03AQH10rz0wVpiVg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730121375449?e=1761177600&v=beta&t=JMaPL58hsZ0iMCZY0_S1pcMi0dVKlpbyKTSRDraOneU
+2025-09-21 12:08:57.741 +03:00 [INF] Sending HTTP request GET https://media.licdn.com/dms/image/v2/D4D03AQH10rz0wVpiVg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730121375449?e=1761177600&v=beta&t=JMaPL58hsZ0iMCZY0_S1pcMi0dVKlpbyKTSRDraOneU
+2025-09-21 12:08:58.060 +03:00 [INF] Received HTTP response headers after 309.3148ms - 200
+2025-09-21 12:08:58.067 +03:00 [INF] End processing HTTP request after 346.3681ms - 200
+2025-09-21 12:08:59.772 +03:00 [INF] Successfully created image for Alaa Atef
+2025-09-21 12:08:59.786 +03:00 [INF] Executing ViewResult, running view Profile.
+2025-09-21 12:08:59.799 +03:00 [INF] Executed ViewResult - view Profile executed in 15.3424ms.
+2025-09-21 12:08:59.805 +03:00 [INF] Executed action LinkedInApp.Controllers.HomeController.Profile (LinkedInApp) in 2459.8088ms
+2025-09-21 12:08:59.809 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.HomeController.Profile (LinkedInApp)'
+2025-09-21 12:08:59.814 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/Home/Profile - 200 null text/html; charset=utf-8 2507.1538ms
+2025-09-21 12:08:59.827 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/generated/profile_7b1f77e5-09a5-4edf-9416-e020f4e1d6ca.png - null null
+2025-09-21 12:08:59.836 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 12:08:59.836 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - null null
+2025-09-21 12:08:59.840 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.5688ms
+2025-09-21 12:08:59.916 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.7908ms
+2025-09-21 12:08:59.921 +03:00 [INF] Sending file. Request path: '/generated/profile_7b1f77e5-09a5-4edf-9416-e020f4e1d6ca.png'. Physical path: 'C:\Work\JohnsonControlsTask\LinkedInApp\wwwroot\generated\profile_7b1f77e5-09a5-4edf-9416-e020f4e1d6ca.png'
+2025-09-21 12:08:59.927 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/generated/profile_7b1f77e5-09a5-4edf-9416-e020f4e1d6ca.png - 200 180571 image/png 99.1531ms
+2025-09-21 12:09:42.757 +03:00 [INF] Starting application in Development
+2025-09-21 12:09:42.913 +03:00 [INF] User profile is available. Using 'C:\Users\Alaa_Atef\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-21 12:09:43.133 +03:00 [INF] Now listening on: https://localhost:7220
+2025-09-21 12:09:43.136 +03:00 [INF] Now listening on: http://localhost:5083
+2025-09-21 12:09:43.190 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 12:09:43.192 +03:00 [INF] Hosting environment: Development
+2025-09-21 12:09:43.193 +03:00 [INF] Content root path: C:\Work\JohnsonControlsTask\LinkedInApp
+2025-09-21 12:09:44.139 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/ - null null
+2025-09-21 12:09:44.313 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:09:44.346 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LinkedInApp.Controllers.HomeController (LinkedInApp).
+2025-09-21 12:09:44.359 +03:00 [INF] Executing ViewResult, running view Index.
+2025-09-21 12:09:44.425 +03:00 [INF] Executed ViewResult - view Index executed in 68.3829ms.
+2025-09-21 12:09:44.432 +03:00 [INF] Executed action LinkedInApp.Controllers.HomeController.Index (LinkedInApp) in 82.7861ms
+2025-09-21 12:09:44.435 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:09:44.441 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/ - 200 null text/html; charset=utf-8 302.9318ms
+2025-09-21 12:09:44.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 12:09:44.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - null null
+2025-09-21 12:09:44.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 17.882ms
+2025-09-21 12:09:44.505 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.5755ms
+2025-09-21 12:09:50.150 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/Home/Profile - null null
+2025-09-21 12:09:50.176 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.HomeController.Profile (LinkedInApp)'
+2025-09-21 12:09:50.191 +03:00 [INF] Route matched with {action = "Profile", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller LinkedInApp.Controllers.HomeController (LinkedInApp).
+2025-09-21 12:09:50.210 +03:00 [INF] Starting image overlay for user Alaa Atef
+2025-09-21 12:09:50.552 +03:00 [INF] Start processing HTTP request GET https://media.licdn.com/dms/image/v2/D4D03AQH10rz0wVpiVg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730121375449?e=1761177600&v=beta&t=JMaPL58hsZ0iMCZY0_S1pcMi0dVKlpbyKTSRDraOneU
+2025-09-21 12:09:50.564 +03:00 [INF] Sending HTTP request GET https://media.licdn.com/dms/image/v2/D4D03AQH10rz0wVpiVg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730121375449?e=1761177600&v=beta&t=JMaPL58hsZ0iMCZY0_S1pcMi0dVKlpbyKTSRDraOneU
+2025-09-21 12:09:50.857 +03:00 [INF] Received HTTP response headers after 284.3565ms - 200
+2025-09-21 12:09:50.861 +03:00 [INF] End processing HTTP request after 318.6818ms - 200
+2025-09-21 12:09:52.294 +03:00 [INF] Successfully created image for Alaa Atef
+2025-09-21 12:09:52.304 +03:00 [INF] Executing ViewResult, running view Profile.
+2025-09-21 12:09:52.317 +03:00 [INF] Executed ViewResult - view Profile executed in 14.6039ms.
+2025-09-21 12:09:52.321 +03:00 [INF] Executed action LinkedInApp.Controllers.HomeController.Profile (LinkedInApp) in 2122.9066ms
+2025-09-21 12:09:52.324 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.HomeController.Profile (LinkedInApp)'
+2025-09-21 12:09:52.331 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/Home/Profile - 200 null text/html; charset=utf-8 2180.1092ms
+2025-09-21 12:09:52.356 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/generated/profile_46133e17-255e-4f5b-ab26-61dba2a117bf.png - null null
+2025-09-21 12:09:52.359 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 12:09:52.360 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - null null
+2025-09-21 12:09:52.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.7105ms
+2025-09-21 12:09:52.420 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.523ms
+2025-09-21 12:09:52.423 +03:00 [INF] Sending file. Request path: '/generated/profile_46133e17-255e-4f5b-ab26-61dba2a117bf.png'. Physical path: 'C:\Work\JohnsonControlsTask\LinkedInApp\wwwroot\generated\profile_46133e17-255e-4f5b-ab26-61dba2a117bf.png'
+2025-09-21 12:09:52.426 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/generated/profile_46133e17-255e-4f5b-ab26-61dba2a117bf.png - 200 121488 image/png 69.879ms
+2025-09-21 12:10:55.994 +03:00 [INF] Starting application in Development
+2025-09-21 12:10:56.148 +03:00 [INF] User profile is available. Using 'C:\Users\Alaa_Atef\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-21 12:10:56.410 +03:00 [INF] Now listening on: https://localhost:7220
+2025-09-21 12:10:56.414 +03:00 [INF] Now listening on: http://localhost:5083
+2025-09-21 12:10:56.515 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 12:10:56.517 +03:00 [INF] Hosting environment: Development
+2025-09-21 12:10:56.519 +03:00 [INF] Content root path: C:\Work\JohnsonControlsTask\LinkedInApp
+2025-09-21 12:10:58.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/ - null null
+2025-09-21 12:10:58.578 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:10:58.658 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LinkedInApp.Controllers.HomeController (LinkedInApp).
+2025-09-21 12:10:58.690 +03:00 [INF] Executing ViewResult, running view Index.
+2025-09-21 12:10:58.848 +03:00 [INF] Executed ViewResult - view Index executed in 162.1788ms.
+2025-09-21 12:10:58.988 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 12:10:58.989 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - null null
+2025-09-21 12:10:59.137 +03:00 [INF] Executed action LinkedInApp.Controllers.HomeController.Index (LinkedInApp) in 474.5501ms
+2025-09-21 12:10:59.197 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 208.2057ms
+2025-09-21 12:10:59.222 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:10:59.350 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/ - 200 null text/html; charset=utf-8 1319.8295ms
+2025-09-21 12:10:59.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 375.6215ms
+2025-09-21 12:11:00.410 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/Account/Logout - null null
+2025-09-21 12:11:00.426 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.AccountController.Logout (LinkedInApp)'
+2025-09-21 12:11:00.439 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller LinkedInApp.Controllers.AccountController (LinkedInApp).
+2025-09-21 12:11:00.453 +03:00 [INF] AuthenticationScheme: Cookies signed out.
+2025-09-21 12:11:00.457 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2025-09-21 12:11:00.458 +03:00 [INF] Executed action LinkedInApp.Controllers.AccountController.Logout (LinkedInApp) in 16.4692ms
+2025-09-21 12:11:00.460 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.AccountController.Logout (LinkedInApp)'
+2025-09-21 12:11:00.462 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/Account/Logout - 302 0 null 51.4814ms
+2025-09-21 12:11:00.469 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/ - null null
+2025-09-21 12:11:00.477 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:11:00.479 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LinkedInApp.Controllers.HomeController (LinkedInApp).
+2025-09-21 12:11:00.488 +03:00 [INF] Executing ViewResult, running view Index.
+2025-09-21 12:11:00.495 +03:00 [INF] Executed ViewResult - view Index executed in 7.1426ms.
+2025-09-21 12:11:00.508 +03:00 [INF] Executed action LinkedInApp.Controllers.HomeController.Index (LinkedInApp) in 21.0425ms
+2025-09-21 12:11:00.511 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:11:00.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - null null
+2025-09-21 12:11:00.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 12:11:00.610 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/ - 200 null text/html; charset=utf-8 140.779ms
+2025-09-21 12:11:00.628 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 101.1829ms
+2025-09-21 12:11:00.671 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 144.142ms
+2025-09-21 12:11:04.353 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/Account/Login - null null
+2025-09-21 12:11:04.368 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.AccountController.Login (LinkedInApp)'
+2025-09-21 12:11:04.372 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller LinkedInApp.Controllers.AccountController (LinkedInApp).
+2025-09-21 12:11:04.378 +03:00 [INF] Executing ChallengeResult with authentication schemes (["LinkedIn"]).
+2025-09-21 12:11:04.394 +03:00 [INF] AuthenticationScheme: LinkedIn was challenged.
+2025-09-21 12:11:04.396 +03:00 [INF] Executed action LinkedInApp.Controllers.AccountController.Login (LinkedInApp) in 20.227ms
+2025-09-21 12:11:04.398 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.AccountController.Login (LinkedInApp)'
+2025-09-21 12:11:04.400 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/Account/Login - 302 0 null 46.8203ms
+2025-09-21 12:11:26.877 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/signin-linkedin?code=AQSa0osR7LF6wMFlnMo8xrryYplQwduXHSQnM7bo5yWX5Iypszp-sl8jpOa7UoFAVReVA1HOP2KCn6r1pOB_IvHxxcUdAOLjuurSzg6O7a7nDFDjfr9Kmro9WYWQYHyUAhSAP2RuMxt_KrAmQgtwGoN7uMmLRUSoxXa-oJRgFvsjgPwxmymxP561xhWxXGB_LT8RdkoL7OxXPfCn9RI&state=CfDJ8DpW54g8ofBMjLt2J3BJcPCvMDz9Lgc0rKAlCMnTBHOLcTzyL70tossheXoAyihia-kNfjVsFKiKct2tR26OxUy-g91qZJxnXmmE11M6tF_mEAhpqFSVRum5CxVce219wu3PxNySHwwfJT9AfSLq1OWM1VQvOMKbcWVbrQotTvZlvkYa7-CoBB26wyn34AIcj1QYAYBX6h2h_dIQCYKgBq4 - null null
+2025-09-21 12:11:28.404 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2025-09-21 12:11:28.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/signin-linkedin?code=AQSa0osR7LF6wMFlnMo8xrryYplQwduXHSQnM7bo5yWX5Iypszp-sl8jpOa7UoFAVReVA1HOP2KCn6r1pOB_IvHxxcUdAOLjuurSzg6O7a7nDFDjfr9Kmro9WYWQYHyUAhSAP2RuMxt_KrAmQgtwGoN7uMmLRUSoxXa-oJRgFvsjgPwxmymxP561xhWxXGB_LT8RdkoL7OxXPfCn9RI&state=CfDJ8DpW54g8ofBMjLt2J3BJcPCvMDz9Lgc0rKAlCMnTBHOLcTzyL70tossheXoAyihia-kNfjVsFKiKct2tR26OxUy-g91qZJxnXmmE11M6tF_mEAhpqFSVRum5CxVce219wu3PxNySHwwfJT9AfSLq1OWM1VQvOMKbcWVbrQotTvZlvkYa7-CoBB26wyn34AIcj1QYAYBX6h2h_dIQCYKgBq4 - 302 0 null 1535.6495ms
+2025-09-21 12:11:28.421 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/ - null null
+2025-09-21 12:11:28.428 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:11:28.430 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LinkedInApp.Controllers.HomeController (LinkedInApp).
+2025-09-21 12:11:28.434 +03:00 [INF] Executing ViewResult, running view Index.
+2025-09-21 12:11:28.438 +03:00 [INF] Executed ViewResult - view Index executed in 4.5252ms.
+2025-09-21 12:11:28.441 +03:00 [INF] Executed action LinkedInApp.Controllers.HomeController.Index (LinkedInApp) in 8.4669ms
+2025-09-21 12:11:28.442 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.HomeController.Index (LinkedInApp)'
+2025-09-21 12:11:28.443 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/ - 200 null text/html; charset=utf-8 22.6227ms
+2025-09-21 12:11:28.514 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 12:11:28.515 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - null null
+2025-09-21 12:11:28.553 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 38.94ms
+2025-09-21 12:11:28.604 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.2373ms
+2025-09-21 12:11:34.904 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/Home/Profile - null null
+2025-09-21 12:11:34.920 +03:00 [INF] Executing endpoint 'LinkedInApp.Controllers.HomeController.Profile (LinkedInApp)'
+2025-09-21 12:11:34.927 +03:00 [INF] Route matched with {action = "Profile", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Profile() on controller LinkedInApp.Controllers.HomeController (LinkedInApp).
+2025-09-21 12:11:34.940 +03:00 [INF] Starting image overlay for user Alaa Atef
+2025-09-21 12:11:35.338 +03:00 [INF] Start processing HTTP request GET https://media.licdn.com/dms/image/v2/D4D03AQH10rz0wVpiVg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730121375449?e=1761177600&v=beta&t=JMaPL58hsZ0iMCZY0_S1pcMi0dVKlpbyKTSRDraOneU
+2025-09-21 12:11:35.390 +03:00 [INF] Sending HTTP request GET https://media.licdn.com/dms/image/v2/D4D03AQH10rz0wVpiVg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730121375449?e=1761177600&v=beta&t=JMaPL58hsZ0iMCZY0_S1pcMi0dVKlpbyKTSRDraOneU
+2025-09-21 12:11:35.649 +03:00 [INF] Received HTTP response headers after 252.7613ms - 200
+2025-09-21 12:11:35.654 +03:00 [INF] End processing HTTP request after 327.3302ms - 200
+2025-09-21 12:11:36.999 +03:00 [INF] Successfully created image for Alaa Atef
+2025-09-21 12:11:37.094 +03:00 [INF] Executing ViewResult, running view Profile.
+2025-09-21 12:11:37.226 +03:00 [INF] Executed ViewResult - view Profile executed in 133.6009ms.
+2025-09-21 12:11:37.316 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_vs/browserLink - null null
+2025-09-21 12:11:37.316 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 12:11:37.316 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7220/generated/profile_c83838f6-4ca6-4bf6-ae63-1b5f808ac052.png - null null
+2025-09-21 12:11:37.380 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 64.3735ms
+2025-09-21 12:11:37.372 +03:00 [INF] Executed action LinkedInApp.Controllers.HomeController.Profile (LinkedInApp) in 2442.7051ms
+2025-09-21 12:11:37.464 +03:00 [INF] Executed endpoint 'LinkedInApp.Controllers.HomeController.Profile (LinkedInApp)'
+2025-09-21 12:11:37.468 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/Home/Profile - 200 null text/html; charset=utf-8 2563.45ms
+2025-09-21 12:11:37.526 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/_vs/browserLink - 200 null text/javascript; charset=UTF-8 209.9685ms
+2025-09-21 12:11:37.571 +03:00 [INF] Sending file. Request path: '/generated/profile_c83838f6-4ca6-4bf6-ae63-1b5f808ac052.png'. Physical path: 'C:\Work\JohnsonControlsTask\LinkedInApp\wwwroot\generated\profile_c83838f6-4ca6-4bf6-ae63-1b5f808ac052.png'
+2025-09-21 12:11:37.573 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7220/generated/profile_c83838f6-4ca6-4bf6-ae63-1b5f808ac052.png - 200 121488 image/png 256.5498ms

@@ -34,13 +34,16 @@ namespace LinkedInApp.Services
                 using var profilePic = await Image.LoadAsync(profileStream);
 
                 // Resize profile picture to 200x200
-                profilePic.Mutate(x => x.Resize(200, 200));
+                profilePic.Mutate(x => x.Resize(300, 300));
+
+                int picX = (background.Width - profilePic.Width) / 2;
+                int picY = (background.Height / 2) - 200;
 
                 // 3. Overlay profile picture
                 background.Mutate(x =>
                 {
                     // Place profile picture at bottom-left corner
-                    x.DrawImage(profilePic, new Point(50, background.Height - 250), 1f);
+                    x.DrawImage(profilePic, new Point(picX, picY), 1f);
                 });
 
                 // 4. Load custom font and draw name
