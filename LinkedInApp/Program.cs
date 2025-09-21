@@ -3,8 +3,18 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OAuth;
 using System.Security.Claims;
 using System.Text.Json;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .Enrich.FromLogContext()
+    .CreateLogger();
+
+builder.Host.UseSerilog(); // Replace default logger with Serilog
 
 // Add MVC services
 builder.Services.AddControllersWithViews();
