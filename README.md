@@ -7,7 +7,7 @@ A .NET 8 MVC web application that allows users to sign in with LinkedIn, fetch t
 * **Authentication with LinkedIn (OAuth 2.0 / OpenID Connect)**
 
   * Sign in using your LinkedIn account
-  * Retrieves user name, email, and profile picture
+  * Retrieves user name, and profile picture
 
 * **Custom Profile Image Generator**
 
