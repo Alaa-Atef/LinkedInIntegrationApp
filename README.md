@@ -102,6 +102,16 @@ The tests cover:
 * Profile image generation (`ImageOverlayService`)
 * Mocked LinkedIn API responses (`LinkedInAuthService`)
 
+## 📸 Demo
+
+![Home Page](docs/Home-Page.png)
+
+![Home Page](docs/Login-Page.png)
+
+![Home Page](docs/LogedIn-Page.png)
+
+![Home Page](docs/Generated-Card-Page.png)
+
 ## 🤝 Contribution
 
 This project was built as part of a technical exercise and demonstrates best practices in:
