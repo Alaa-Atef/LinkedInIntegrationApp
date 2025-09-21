@@ -2,5 +2,10 @@
     ViewData["Title"] = "Error";
 }
 
-<h2>Something went wrong</h2>
-<p>We’re sorry, an unexpected error occurred. Please try again later.</p>
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="text-center">
+        <h1 class="display-4 text-danger">Oops!</h1>
+        <p class="lead">Something went wrong. Please try again later.</p>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Go Back Home</a>
+    </div>
+</div>

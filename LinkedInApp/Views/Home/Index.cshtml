@@ -1,19 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold mb-3">LinkedIn Profile Card Generator</h1>
+        <p class="lead text-muted mb-4">
+            Connect with LinkedIn, generate your custom profile card, and download it instantly.
+        </p>
+
+        @if (User.Identity!.IsAuthenticated)
+        {
+            <a asp-controller="Home" asp-action="Profile" class="btn btn-success btn-lg">
+                Generate My Profile Card
+            </a>
+        }
+        else
+        {
+            <a asp-controller="Account" asp-action="Login" class="btn btn-primary btn-lg">
+                <i class="bi bi-linkedin"></i> Login with LinkedIn
+            </a>
+        }
+    </div>
 </div>
-
-@if (User.Identity!.IsAuthenticated)
-{
-    <h3>Hello, @User.Identity.Name</h3>
-    <img src="@User.FindFirst("profile-picture")?.Value" alt="Profile Picture" style="max-width:150px;" />
-    <br />
-    <a asp-controller="Account" asp-action="Logout">Logout</a>
-}
-else
-{
-    <a asp-controller="Account" asp-action="Login">Login with LinkedIn</a>
-}
